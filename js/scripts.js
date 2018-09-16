@@ -1,8 +1,15 @@
-var add = function(number1, number2) {
-  return number1 + number2;
-};
+var grade=parseInt(prompt("enter exam percentage"));
+if(grade==0)
+alert("not applicable")
+else if(grade>=80 )/* || grade <=100) */
+alert ("A")
 
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
-var result = add(number1, number2);
-alert(result);
+else if(grade>=60) /* || grade <=79) */
+alert ("B")
+
+else if(grade>=40 )
+alert ("C")
+else if(grade>=20) /* || grade <=39) */
+alert ("D")
+else if(grade>=1)
+alert ("E")
