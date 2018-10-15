@@ -5,3 +5,13 @@
     background-color: moccasin;
     border-radius: 50px;
 }
+#deco{
+    width: 300px;
+
+    border:  10px solid;
+    padding: 20px;
+    border-radius: 45px;
+    background-color: black;
+    color:coral;
+
+}

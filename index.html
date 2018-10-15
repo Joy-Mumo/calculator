@@ -21,11 +21,11 @@
       <div class="col-md-12">
           <h4>Input two values and choose an operation to be performed on them.</h4>
 
-          <button class="btn btn-success" id="add">Add</button>
-          <button class="btn btn-warning" id="subtract">Subtract</button>
-          <button class="btn btn-danger" id="multiply">Multiply</button>
-          <button class="btn btn-danger" id="divide">Divide</button>
-          <button class="btn btn-warning" id="reminder">Reminder</button>
+          <button  type="submit" class="btn btn-success" id="add" onclick="calculate()">Add</button>
+          <button type="submit"  class="btn btn-warning" id="subtract" onclick="operate()">Subtract</button>
+          <button type="submit"  class="btn btn-danger" id="multiply" onclick="perform()">Multiply</button>
+          <button  type="submit" class="btn btn-danger" id="divide" onclick="attack()">Divide</button>
+          
           
       </div>
     </div>
@@ -46,7 +46,12 @@
   
         </form>
       </div>
-    </div>  
+    </div><br><br> 
+    <div class="row" id="deco" >
+      <div class="col-md-12">
+        <h4 id="display">Answer is;</h4>
+      </div>
+    </div>
   </div>
 </body>
 </html>

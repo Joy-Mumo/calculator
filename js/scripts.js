@@ -1,40 +1,58 @@
-// var grade=parseInt(prompt("enter exam percentage"));
-// if(grade==0)
-// alert("not applicable")
-// else if(grade>=80 )/* || grade <=100) */
-// alert ("A")
 
-// else if(grade>=60) /* || grade <=79) */
-// alert ("B")
+function calculate() {
+   var a = parseInt(document.getElementById("firstValue").value);
+  var b =parseInt(document.getElementById("secondValue").value);
+  var result = add(a,b);
+  $("#display").text(result);
+  
+  return result;
+}
+ 
+var add=function(a,b){
+  return a+b;
+};
 
-// else if(grade>=40 )
-// alert ("C")
-// else if(grade>=20) /* || grade <=39) */
-// alert ("D")
-// else if(grade>=1)
-// alert ("E")
-$(document).ready(function() {
-    $("button#add").click(function() {
-    $("p").text("Javascript is a language that enables interaction with the web.");
-  });
-  $("button#subtract").click(function() {
-  $("p").text("The actions taken on an element,usually depicted next to a parenthesis.");
-});
-$("button#multiply").click(function() {
-$("p").text("A function is a procedure taken on an element.");
-});
-$("button#divide").click(function() {
-$("p").text("jQuery is a single javascript file with in-built codes to help programmers build a cleaner web.");
-});
-$("button#reminder").click(function() {
-$("p").text("Alert is a function that brings a pop up box.");
-});
 
-});
+function operate() {
+  var a = parseInt(document.getElementById("firstValue").value);
+ var b =parseInt(document.getElementById("secondValue").value);
+ var result = subtract(a,b);
+ $("#display").text(result);
+ 
+ return result;
+}
 
-// $("form#new-contat").submit(function(event) {
-//     event.preventDefault();
+var subtract=function(a,b){
+ return a-b;
+};
 
-//     var inputtedFirstName = $("input#new-first-name").val();
-//     var inputtedLastName = $("input#new-last-name").val();
-//     var newContact = new Contact(inputtedFirstName, inputtedLastName);
+
+function perform() {
+  var a = parseInt(document.getElementById("firstValue").value);
+ var b =parseInt(document.getElementById("secondValue").value);
+ var result = multiply(a,b);
+ $("#display").text(result);
+ 
+ return result;
+}
+
+var multiply=function(a,b){
+ return a*b;
+};
+
+
+function attack() {
+  var a = parseInt(document.getElementById("firstValue").value);
+ var b =parseInt(document.getElementById("secondValue").value);
+ var result = divide(a,b);
+ $("#display").text(result);
+ 
+ return result;
+}
+
+var divide=function(a,b){
+ return a/b;
+};
+
+
+
